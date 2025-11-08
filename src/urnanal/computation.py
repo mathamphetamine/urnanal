@@ -2,8 +2,8 @@ import itertools
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, field
 
-from urn.constraint import ConstraintItem
-from urn.constants import ComputationType, ComputationAction
+from urnanal.constraint import ConstraintItem
+from urnanal.constants import ComputationType, ComputationAction
 
 class ComputationDescriptionError(Exception):
     pass

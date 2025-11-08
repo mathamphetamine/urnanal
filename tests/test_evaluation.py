@@ -2,10 +2,10 @@ import pytest
 from sympy import Poly, Rational, binomial
 from sympy.abc import x
 
-from urn.evaluation import make_count_draw_polynomials, evaluate
-from urn.constraint import ConstraintItem
-from urn.computation import ComputationDescription
-from urn.constants import ComputationType, ComputationAction
+from urnanal.evaluation import make_count_draw_polynomials, evaluate
+from urnanal.constraint import ConstraintItem
+from urnanal.computation import ComputationDescription
+from urnanal.constants import ComputationType, ComputationAction
 
 
 @pytest.mark.parametrize(

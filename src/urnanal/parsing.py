@@ -1,9 +1,9 @@
 import lark
 
-from urn.constraint import ConstraintItem
-from urn.output import Output
-from urn.computation import ComputationDescription
-from urn.constants import OutputFormat, ComputationType, ComputationAction
+from urnanal.constraint import ConstraintItem
+from urnanal.output import Output
+from urnanal.computation import ComputationDescription
+from urnanal.constants import OutputFormat, ComputationType, ComputationAction
 
 
 @lark.v_args(inline=True)

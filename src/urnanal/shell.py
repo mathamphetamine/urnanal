@@ -3,8 +3,8 @@ import sys
 
 import lark
 
-from urn.computation import ComputationDescriptionError
-from urn.evaluation import process_query
+from urnanal.computation import ComputationDescriptionError
+from urnanal.evaluation import process_query
 
 
 EOL = ";"

@@ -3,7 +3,7 @@ import sys
 
 import lark
 
-from urn import __version__
+from urnanal import __version__
 
 
 DESCRIPTION = "Multivariate hypergeometric calculator."
@@ -28,8 +28,8 @@ def main() -> None:
     args = parse_args()
 
     # Delay more expensive imports until needed.
-    from urn.shell import UrnShell
-    from urn.evaluation import process_query
+    from urnanal.shell import UrnShell
+    from urnanal.evaluation import process_query
 
     parser = lark.Lark.open("grammar.lark", rel_to=__file__)
 

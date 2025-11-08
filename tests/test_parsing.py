@@ -3,15 +3,15 @@ import math
 import lark
 import pytest
 
-from urn.constraint import ConstraintItem
-from urn.computation import ComputationDescription
-from urn.constants import ComputationType, ComputationAction
-from urn.parsing import BuildComputation
+from urnanal.constraint import ConstraintItem
+from urnanal.computation import ComputationDescription
+from urnanal.constants import ComputationType, ComputationAction
+from urnanal.parsing import BuildComputation
 
 
 @pytest.fixture(scope="session")
 def parser(request):
-    rel_to = request.config.rootdir / "src" / "urn" / "grammar.lark"
+    rel_to = request.config.rootdir / "src" / "urnanal" / "grammar.lark"
     return lark.Lark.open("grammar.lark", rel_to=rel_to)
 
 

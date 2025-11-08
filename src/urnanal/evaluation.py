@@ -4,10 +4,10 @@ import lark
 from sympy import Poly, Rational, binomial, prod, factorial
 from sympy.abc import x
 
-from urn.computation import ComputationDescription, ComputationDescriptionError
-from urn.constraint import ConstraintItem, union_constraint_disjuncts
-from urn.parsing import BuildComputation
-from urn.constants import ComputationType, ComputationAction
+from urnanal.computation import ComputationDescription, ComputationDescriptionError
+from urnanal.constraint import ConstraintItem, union_constraint_disjuncts
+from urnanal.parsing import BuildComputation
+from urnanal.constants import ComputationType, ComputationAction
 
 
 def degrees_to_polynomial_with_binomial_coeff(degrees: Collection[int], n: int) -> Poly:

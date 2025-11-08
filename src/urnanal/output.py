@@ -5,8 +5,8 @@ from sympy import Rational
 import tabulate
 import uniplot
 
-from urn.computation import ComputationDescription, ComputationType
-from urn.constants import OutputFormat
+from urnanal.computation import ComputationDescription, ComputationType
+from urnanal.constants import OutputFormat
 
 
 @dataclass
